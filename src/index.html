@@ -1,0 +1,823 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../scss/custom.scss">
+	<!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+
+	<!-- tabs link -->
+    <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script> 
+</head>
+  <body>
+      <div class="container-fluid p-0">
+		<div class="container-fluid p-0">
+			<!-- Navigation Bar -->
+			<nav class="navbar navbar-expand-lg bg-light container-fluid p-0">
+				<div class="container-fluid px-5">
+				  <a class="navbar-brand" href="#">
+					<img src="../assets/images/logo-tagline.png" alt="BCG Logo">
+				  </a>
+				  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				  </button>
+				  <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarNavDropdown">
+					<ul class="navbar-nav left-nav d-flex align-items-center m-0">
+					  <li class="nav-item">
+						<a class="nav-link" aria-current="page" href="#">Browse Jobs</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link" href="#">Find a Recruiter</a>
+					  </li>
+					  <li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						  Resource Library
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						  <li class="dropend">
+							<a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								Attorney Advice
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+								<li><a href="#" class="dropdown-item">sub menu 1</a></li>
+								<li><a href="#" class="dropdown-item">sub menu 2</a></li>
+							</ul>
+						</li>
+						  <li><a class="dropdown-item" href="#">Job Search Tools</a></li>
+						  <li><a class="dropdown-item" href="#">Case Studies</a></li>
+						  <li><a class="dropdown-item" href="#">Legal Market Research</a></li>
+						  <li><a class="dropdown-item" href="#">Law Firm Rankings</a></li>
+						  <li><a class="dropdown-item" href="#">Guides/eBooks</a></li>
+						  <li><a class="dropdown-item" href="#">Podcast</a></li>
+						  <li><a class="dropdown-item" href="#">Videos</a></li>
+						</ul>
+					  </li>
+					</ul>
+					<ul class="nav right-nav d-flex align-items-center justify-content-end m-0">
+						<li class="nav-item border-end border-1">
+						  <a class="nav-link" href="#">
+							For Employers
+							<i class="bi bi-arrow-up-right" style="color: gray"></i>
+						  </a>
+						 
+						</li>
+						<li class="nav-item border-end border-1">
+						  <a class="nav-link" href="#">Sign In</a>
+						</li>
+						<li class="nav-item">
+						  <a class="nav-link" href="#">
+							<i class="bi bi-search" style="font-size: 1.3rem;"></i>
+						</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">
+								<i class="bi bi-list" style="font-size: 1.5rem; color: gray;"></i>
+							</a>
+						</li>
+					  </ul>
+				  </div>
+				</div>
+			</nav>
+		</div>
+		<div class="banner container-fluid px-5">
+			<div class="row flex-lg-row-reverse align-items-center g-5 px-4">
+				<div class="col-lg-3 p-0" 
+				style="
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;">
+					<h5 class="fw-normal">Search Attorney Jobs</h5>
+					<div class="btn-group">
+						<button class="btn btn-outline-secondary dropdown-toggle" type="button" id="defaultDropdown" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+						  Primary area of practice
+						</button>
+						<ul class="dropdown-menu" aria-labelledby="defaultDropdown">
+						  <li><a class="dropdown-item" href="#">Menu item</a></li>
+						  <li><a class="dropdown-item" href="#">Menu item</a></li>
+						  <li><a class="dropdown-item" href="#">Menu item</a></li>
+						</ul>
+					</div>
+					<div class="btn-group">
+						<button class="btn btn-outline-secondary dropdown-toggle" type="button" id="defaultDropdown" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+						  Minimum years of experience
+						</button>
+						<ul class="dropdown-menu" aria-labelledby="defaultDropdown">
+						  <li><a class="dropdown-item" href="#">Menu item</a></li>
+						  <li><a class="dropdown-item" href="#">Menu item</a></li>
+						  <li><a class="dropdown-item" href="#">Menu item</a></li>
+						</ul>
+					</div>
+					<div class="btn-group">
+						<button class="btn btn-outline-secondary dropdown-toggle" type="button" id="defaultDropdown" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+						  Location
+						</button>
+						<ul class="dropdown-menu" aria-labelledby="defaultDropdown">
+						  <li><a class="dropdown-item" href="#">Menu item</a></li>
+						  <li><a class="dropdown-item" href="#">Menu item</a></li>
+						  <li><a class="dropdown-item" href="#">Menu item</a></li>
+						</ul>
+					</div>
+					<div class="d-grid gap-2 d-md-flex justify-content-md-start pt-5">
+					  <button type="button" class="btn btn-danger btn-md px-12">Search Jobs</button>
+					</div>
+				  </div>
+				<div class="col-5 col-sm-8 col-lg-6 p-0">
+				  <img src="../assets/images/Banner-img.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+				</div>
+				<div class="col-lg-3 p-0">
+				  <h1 class="fw-normal lh-base mb-4">America's Premier Legal Placement Firm For Law Firm Attorneys</h1>
+				  <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+					<button type="button" class="btn btn-outline-secondary btn-md px-8 me-md-2">Submit Your Resume</button>
+				  </div>
+				</div>
+			  </div>
+		</div>
+		<section class="subcribe-section container-fluid px-5 py-2">
+			<div class="section_wrapper row align-items-center">
+				<div class="col-6 py-2">
+					<h2>We've changed thousands of lives over the past 20 years, <span>and yours could be next.</span></h2>
+					<p>
+						When you use BCG Attorney you will get an unfair advantage because you will use the best recruiting
+						company in the world for finding permanent law firm positions.
+					</p>
+				</div>
+				<div class="col-6 py-2">
+					<div class="input-group m-4">
+						<input type="text" class="form-control" placeholder="Your@email.com" aria-label="Recipient's username" aria-describedby="button-addon2">
+						<button class="btn btn-danger" type="button" id="button-addon2">Subscribe</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="recommended-section container-fluid px-5 py-2">
+			<h5 class="mt-2">Recommended Jobs for You</h5>
+			<div class="border-top border-1 mb-2"></div>
+			<div class="card-wrapper col">
+				<div class="card py-2 px-3 mb-2" style="width: 100%;">
+					<div class="card-body p-0 m-0">
+					  <div class="card-title m-0 d-flex justify-content-between">
+						<h5 class="text-start col-11">
+							Mid-level Corporate Associate
+						</h5>
+						<a href="#heart" class="col-1 ms-4"><i class="bi bi-heart"></i></a>
+					  </div>
+					  <h6 class="card-subtitle mb-2 text-muted fs-7">
+						  <i class="bi bi-geo-alt"></i>
+						  Atlanta, GA
+					  </h6>
+					  <p class="card-text fs-7">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit veniam eveniet minus porro voluptatem ex assumenda tempore consequuntur. Ratione nulla similique aperiam eos tempore assumenda nemo pariatur architecto hic ea?</p>
+					</div>
+					<div class="card-custom-footer row d-flex justify-content-between py-1">
+						<div class="left col-8">
+							<p class="fs-7">Handled by: <span>Atlanta Office</span></p>
+						</div>
+						<div class="right col-4 text-end fs-7">
+							<a href="#" class="card-link btn btn-danger">Submit Resume</a>
+							<a href="#" class="card-link-1">Another link <i class="bi bi-arrow-right"></i></a>	
+						</div>
+					</div>
+				</div>
+				<div class="card py-2 px-3 mb-2" style="width: 100%;">
+					<div class="card-body p-0 m-0">
+					  <div class="card-title m-0 d-flex justify-content-between">
+						<h5 class="text-start col-11">
+							Government Contracts Claims Litigation Associate Attorney
+						</h5>
+						<a href="#heart" class="col-1 ms-4"><i class="bi bi-heart"></i></a>
+					  </div>
+					  <h6 class="card-subtitle mb-2 text-muted fs-7">
+						  <i class="bi bi-geo-alt"></i>
+						  District of Columbia - Washingtons
+					  </h6>
+					  <p class="card-text fs-7">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit veniam eveniet minus porro voluptatem ex assumenda tempore consequuntur. Ratione nulla similique aperiam eos tempore assumenda nemo pariatur architecto hic ea?</p>
+					</div>
+					<div class="card-custom-footer row d-flex justify-content-between py-1">
+						<div class="left col-8">
+							<p class="fs-7">Handled by: <span>Washington, D.C. office</span></p>
+						</div>
+						<div class="right col-4 text-end fs-7">
+							<a href="#" class="card-link btn btn-danger">Submit Resume</a>
+							<a href="#" class="card-link-1">Another link <i class="bi bi-arrow-right"></i></a>	
+						</div>
+					</div>
+				</div>
+				<div class="card py-2 px-3 mb-2" style="width: 100%;">
+					<div class="card-body p-0 m-0">
+					  <div class="card-title m-0 d-flex justify-content-between">
+						<h5 class="text-start col-11">
+							Mid-level Corporate Associate
+						</h5>
+						<a href="#heart" class="col-1 ms-4"><i class="bi bi-heart"></i></a>
+					  </div>
+					  <h6 class="card-subtitle mb-2 text-muted fs-7">
+						  <i class="bi bi-geo-alt"></i>
+						  Atlanta, GA
+					  </h6>
+					  <p class="card-text fs-7">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit veniam eveniet minus porro voluptatem ex assumenda tempore consequuntur. Ratione nulla similique aperiam eos tempore assumenda nemo pariatur architecto hic ea?</p>
+					</div>
+					<div class="card-custom-footer row d-flex justify-content-between py-1">
+						<div class="left col-8">
+							<p class="fs-7">Handled by: <span>Atlanta office</span></p>
+						</div>
+						<div class="right col-4 text-end fs-7">
+							<a href="#" class="card-link btn btn-danger">Submit Resume</a>
+							<a href="#" class="card-link-1">Another link <i class="bi bi-arrow-right"></i></a>	
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="article-section container-fluid px-5 py-2">
+			<div class="article-header row align-items-center">
+				<h5 class="mt-2 col-11 p-0">Our latest articles</h5>
+				<a href="" class="col-1 fs-7 text-end">View All</a>
+			</div>
+			<div class="border-top border-1 p-0 m-0"></div>
+			<div class="card-wrapper row d-flex justify-content-between">
+				<div class="card m-0 p-3" style="width: 49%;">
+					<div class="card-body p-0 m-0">
+						<div class="card-title row">
+							<h5 class="col-9">Today</h5>
+							<span class="fs-8 col-3 text-muted text-end">SEP 28, 2019</span>
+						</div>
+						<div class="border-top border-1 m-0 pb-2"></div>
+						<div class="daily-card pb-2">
+							<h6>Daily Advice</h6>
+							<div class="daily-card-body row">
+								<div class="daily-img col-lg-6">
+									<img src="../assets/images/daily-advice.png" alt="">
+								</div>
+								<div class="daily-text col-6 ps-3">
+									<h6>Allow people around you to feel and believe whatever they want.</h6>
+									<div class="daily-footer pt-3 row d-flex justify-content-between align-items-center">
+										<div class="left col-8">
+											<a href="#" class="fs-7">Read Article</a>
+										</div>
+										<div class="right col-4 text-end fs-7">
+											<a href="#" class="card-link-1"> <i class="bi bi-arrow-right"></i></a>	
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="daily-card">
+							<h6>Daily Q&A</h6>
+							<div class="daily-card-body row">
+								<div class="daily-img col-lg-6">
+									<img src="../assets/images/daily-advice.png" alt="">
+								</div>
+								<div class="daily-text col-6 ps-3">
+									<h6>The BCG Attorney Search 2019 state of the american lateral law firm legal market report</h6>
+									<div class="daily-footer pt-2 row d-flex justify-content-between align-items-center">
+										<div class="left col-8">
+											<a href="#" class="fs-7">Read Article</a>
+										</div>
+										<div class="right col-4 text-end fs-7">
+											<a href="#" class="card-link-1"> <i class="bi bi-arrow-right"></i></a>	
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card m-0 p-0" style="width: 49%;">
+					<img src="../assets/images/article-of-the-week.png" class="card-img-top" alt="">
+					<div class="card-body px-3 pt-1 pb-0 m-0">
+						<h6 style="text-transform: capitalize">
+							how to understand your personality and what practice area, type firm,
+							or practice setting you should be working in by using DISC profiles
+						</h6>
+					</div>
+					<div class="card-custom-footer row d-flex justify-content-between px-3 pb-1 align-items-center">
+						<div class="left col-8">
+							<a href="#" class="fs-7">Read Article</a>
+						</div>
+						<div class="right col-4 text-end fs-7">
+							<a href="#" class="card-link-1"> <i class="bi bi-arrow-right"></i></a>	
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="featured-header row align-items-center mt-2">
+				<h5 class="mt-2 col-11 p-0">Featured</h5>
+				<a href="" class="col-1 fs-7 text-end">View All</a>
+			</div>
+			<div class="border-top border-1"></div>
+			<div class="card-wrapper row d-flex justify-content-around">
+				<div class="card m-0 p-0" style="width: 24%;">
+					<img src="../assets/images/featured-1.png" class="card-img-top" alt="">
+					<div class="card-body px-2 pt-1 pb-0 m-0">
+						<h6 style="text-transform: capitalize">
+							seven things the best legal recruiters do that you cannot do yourself
+					</div>
+					<div class="card-custom-footer row d-flex justify-content-between px-2 pb-2 align-items-center">
+						<div class="left col-8">
+							<a href="#" class="fs-7">Read Article</a>
+						</div>
+						<div class="right col-4 text-end fs-7">
+							<a href="#" class="card-link-1"> <i class="bi bi-arrow-right"></i></a>	
+						</div>
+					</div>
+				</div>
+				<div class="card m-0 p-0" style="width: 24%;">
+					<img src="../assets/images/featured-2.png" class="card-img-top" alt="">
+					<div class="card-body px-2 pt-1 pb-0 m-0">
+						<h6 style="text-transform: capitalize">
+							what law firm title mean: of counsel, non-quity partner explained
+						</h6>
+					</div>
+					<div class="card-custom-footer row d-flex justify-content-between px-2 pb-2 align-items-center">
+						<div class="left col-8">
+							<a href="#" class="fs-7">Read Article</a>
+						</div>
+						<div class="right col-4 text-end fs-7">
+							<a href="#" class="card-link-1"> <i class="bi bi-arrow-right"></i></a>	
+						</div>
+					</div>
+				</div>
+				<div class="card m-0 p-0" style="width: 24%;">
+					<img src="../assets/images/featured-3.png" class="card-img-top" alt="">
+					<div class="card-body px-2 pt-1 pb-0 m-0">
+						<h6 style="text-transform: capitalize">
+							top 6 things attorneys and law students need to remove from...
+						</h6>
+					</div>
+					<div class="card-custom-footer row d-flex justify-content-between px-2 mb-2 align-items-center">
+						<div class="left col-8">
+							<a href="#" class="fs-7">Read Article</a>
+						</div>
+						<div class="right col-4 text-end fs-7">
+							<a href="#" class="card-link-1"> <i class="bi bi-arrow-right"></i></a>	
+						</div>
+					</div>
+				</div>
+				<div class="card m-0 p-0" style="width: 24%;">
+					<img src="../assets/images/featured-4.png" class="card-img-top" alt="">
+					<div class="card-body px-2 pt-1 pb-0 m-0">
+						<h6 style="text-transform: capitalize">
+							the only seven reasons a law firm will ever make you a partner
+						</h6>
+					</div>
+					<div class="card-custom-footer row d-flex justify-content-between px-2 pb-2 align-items-center">
+						<div class="left col-8">
+							<a href="#" class="fs-7">Read Article</a>
+						</div>
+						<div class="right col-4 text-end fs-7">
+							<a href="#" class="card-link-1"> <i class="bi bi-arrow-right"></i></a>	
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="testimonial-section containter-fluid px-5 py-2">
+			<div class="testimonial-header row align-items-center">
+				<h5 class="mt-2 col-10 p-0">
+					Testimonials
+				</h5>
+				<a href="" class="col-2 fs-7 text-end">View All Testimonials</a>
+			</div>
+			<div class="border-top border-1 p-0 m-0"></div>
+			<div class="testimonial-wrapper">
+				<div id="myCarousel" class="carousel slide carousel-dark">
+					<div class="carousel-indicators">
+					  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
+					  <!-- <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" class="active" aria-label="Slide 2"></button>
+					  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+					  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button> -->
+					</div>
+					<div class="carousel-inner">
+					  <div class="carousel-item">
+						<!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg> -->
+				
+						<div class="container">
+						  <div class="carousel-caption text-start">
+							<h1>Example headline.</h1>
+							<p>Some representative placeholder content for the first slide of the carousel.</p>
+							<p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+						  </div>
+						</div>
+					  </div>
+					  <div class="carousel-item active">
+						<div class="container">
+						  <div class="carousel-caption">
+							<h1>Another example headline.</h1>
+							<p>Some representative placeholder content for the second slide of the carousel.</p>
+							<p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+						  </div>
+						</div>
+					  </div>
+					  <div class="carousel-item">				
+						<div class="container">
+						  <div class="carousel-caption text-end">
+							<h1>One more for good measure.</h1>
+							<p>Some representative placeholder content for the third slide of this carousel.</p>
+							<p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+						  </div>
+						</div>
+					  </div>
+					  <div class="carousel-item">
+						<div class="container">
+						  <div class="carousel-caption text-end">
+							<h1>One more for good measure.</h1>
+							<p>Some representative placeholder content for the third slide of this carousel.</p>
+							<p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+						  </div>
+						</div>
+					  </div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+					  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					  <span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+					  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+					  <span class="visually-hidden">Next</span>
+					</button>
+				  </div>
+			</div>
+		</section>
+		<section class="legal-section container-fluid px-5 py-2">
+			<h5 class="mt-2">Legal Jobs</h5>
+			<div class="border-top border-1 mb-2"></div>
+			<div class="legal-wrapper pt-3">
+				<!-- Nav tabs -->
+			<div class="tabs d-flex justify-content-start align-items-start">
+
+				<ul class="nav nav-tabs m-0" role="tablist">
+					<li class="active">
+						<a href="#hometab" role="tab" data-toggle="tab" class="fs-7 fw-bold py-3">
+							By Practice Area
+						</a>
+					</li>
+					<li>
+						<a href="#citytab" role="tab" data-toggle="tab" class="fs-7 fw-bold py-3" style="padding-left: 5rem; padding-right: 5rem;">
+							By City
+						</a>
+					</li>
+				</ul>
+			
+				<!-- Tab panes -->
+			</div>
+			<div class="tab-content py-4 px-3">
+				<div class="tab-pane active" id="hometab">
+					<div class="row text-start px-3">
+						<div class="col-md-3 col-lg-2 col-xl-3 mx-auto mb-4">
+							<!-- Links -->
+							<p class="fs-7 mb-1">
+								<a href="#!" class="text-reset">Miami</a>
+							</p>
+							<p class="fs-7 mb-1">
+								<a href="#!" class="text-reset">New York</a>
+							</p>
+							<p class="fs-7 mb-1">
+								<a href="#!" class="text-reset">Palo Alto</a>
+							</p>
+						</div>
+						<div class="col-md-3 col-lg-2 col-xl-3 mx-auto mb-4">
+							<!-- Links -->
+							<p class="fs-7 mb-1">
+								<a href="#!" class="text-reset">Miami</a>
+							</p>
+							<p class="fs-7 mb-1">
+								<a href="#!" class="text-reset">New York</a>
+							</p>
+							<p class="fs-7 mb-1">
+								<a href="#!" class="text-reset">Palo Alto</a>
+							</p>
+						</div>
+						<div class="col-md-3 col-lg-2 col-xl-3 mx-auto mb-4">
+							<!-- Links -->
+							<p class="fs-7 mb-1">
+								<a href="#!" class="text-reset">Miami</a>
+							</p>
+							<p class="fs-7 mb-1">
+								<a href="#!" class="text-reset">New York</a>
+							</p>
+							<p class="fs-7 mb-1">
+								<a href="#!" class="text-reset">Palo Alto</a>
+							</p>
+						</div>
+						<div class="col-md-3 col-lg-2 col-xl-3 mx-auto mb-4">
+							<!-- Links -->
+							<p class="fs-7 mb-1">
+								<a href="#!" class="text-reset">Miami</a>
+							</p>
+							<p class="fs-7 mb-1">
+								<a href="#!" class="text-reset">New York</a>
+							</p>
+							<p class="fs-7 mb-1">
+								<a href="#!" class="text-reset">Palo Alto</a>
+							</p>
+						</div>
+					</div>
+					
+				</div>
+				<div class="tab-pane" id="citytab">
+						<h1>jasdhfa</h1>
+				</div>
+			</div>
+  
+
+			</div>
+		</section>
+		<footer class="footer-section container-fluid py-2 px-0">
+			<div class="footer-2 m-0">
+				<div class="container text-center text-md-start mt-2">
+					<!-- Grid row -->
+					<div class="row mt-3">
+					  <!-- Grid column -->
+					  <div class="col-md-3 col-lg-4 col-xl-2 mx-auto mb-4">
+						<!-- Content -->
+						<a href="#logo-footer"><img src="../assets/images/logo-footer.png" class="w-100" alt="BCG Logo"></a>
+					  </div>
+					  <!-- Grid column -->
+			  
+					  <!-- Grid column -->
+					  <div class="col-md-2 col-lg-2 col-xl-5 mx-auto mb-4">
+						<!-- Links -->
+						<h6 class="fw-normal mb-2">
+							There's only one attorney BCG Attorney Search
+						</h6>
+						<p class="fs-7 mb-1" style="color: white;">
+							We make hundreds of placement each year and change the lives of attorneys we work with by
+							constantly providing them with more opportunities, more career advice, more market knowledge
+							and the commitment it takes to get them to the next level.
+						</p>
+					  </div>
+					  <!-- Grid column -->
+					  
+					  <!-- Grid column -->
+					  <div class="col-md-3 col-lg-2 col-xl-5 mx-auto mb-4 ps-4">
+						<h6 class="fw-normal mb-2">
+							Stay Connected
+						</h6>
+						<p class="fs-7 mb-1" style="color: white;">
+							Subscribe to receive access to exclusive resurces.
+						</p>
+						<div class="input-group pt-3">
+							<input type="text" class="form-control" placeholder="Your@email.com" aria-label="Recipient's username" aria-describedby="button-addon2">
+							<button class="btn btn-danger" type="button" id="button-addon2">Subscribe</button>
+						</div>
+					  </div>
+					  <!-- Grid column -->
+					<!-- Grid row -->
+				</div>
+			</div>
+			<div class="footer-2 m-0">
+				<div class="container text-center text-md-start mt-2">
+					<!-- Grid row -->
+					<div class="row mt-3">
+					  <!-- Grid column -->
+					  <div class="col-md-3 col-lg-4 col-xl-2 mx-auto mb-4">
+						<!-- Content -->
+						<h6 class="text-capitalize fw-bold mb-4">
+						  BCG offices
+						</h6>
+					  </div>
+					  <!-- Grid column -->
+			  
+					  <!-- Grid column -->
+					  <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+						<!-- Links -->
+						<p class="fs-7 mb-1">
+						  <a href="#!" class="text-reset">Atlanta</a>
+						</p>
+						<p class="fs-7 mb-1">
+						  <a href="#!" class="text-reset">Boston</a>
+						</p>
+						<p class="fs-7 mb-1">
+						  <a href="#!" class="text-reset">Century City</a>
+						</p>
+					  </div>
+					  <!-- Grid column -->
+			  
+					  
+					  <!-- Grid column -->
+					  <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+						<!-- Links -->
+						<p class="fs-7 mb-1">
+						  <a href="#!" class="text-reset">Chicago</a>
+						</p>
+						<p class="fs-7 mb-1">
+						  <a href="#!" class="text-reset">Huoston</a>
+						</p>
+						<p class="fs-7 mb-1">
+						  <a href="#!" class="text-reset">Irvine</a>
+						</p>
+					  </div>
+					  <!-- Grid column -->
+
+					  <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+						<!-- Links -->
+						<p class="fs-7 mb-1">
+						  <a href="#!" class="text-reset">Las Vegas</a>
+						</p>
+						<p class="fs-7 mb-1">
+						  <a href="#!" class="text-reset">Los Angeles</a>
+						</p>
+						<p class="fs-7 mb-1">
+						  <a href="#!" class="text-reset">Malibu</a>
+						</p>
+					  </div>
+					  <!-- Grid column -->
+
+					  <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+						<!-- Links -->
+						<p class="fs-7 mb-1">
+						  <a href="#!" class="text-reset">Miami</a>
+						</p>
+						<p class="fs-7 mb-1">
+						  <a href="#!" class="text-reset">New York</a>
+						</p>
+						<p class="fs-7 mb-1">
+						  <a href="#!" class="text-reset">Palo Alto</a>
+						</p>
+					  </div>
+					  <!-- Grid column -->
+
+					  <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+						<!-- Links -->
+						<p class="fs-7 mb-1">
+						  <a href="#!" class="text-reset">San Francisco</a>
+						</p>
+						<p class="fs-7 mb-1">
+						  <a href="#!" class="text-reset">Seattle</a>
+						</p>
+						<p class="fs-7 mb-1">
+						  <a href="#!" class="text-reset">Washington, DC</a>
+						</p>
+					  </div>
+					  <!-- Grid column -->
+					<!-- Grid row -->
+				</div>
+			</div>
+			<div class="border-top border-1 mb-2 container-fluid"></div>
+			<div class="footer-3 m-0">
+				<div class="container text-center text-md-start mt-2">
+						<!-- Grid row -->
+					<div class="row mt-3">
+					<!-- Grid column -->
+					<div class="col-md-3 col-lg-4 col-xl-2 mx-auto mb-4">
+						<!-- Content -->
+						<h6 class="text-capitalize fw-normal mb-2">
+						Lateral Move report
+						</h6>
+						<h6 class="fs-7">
+							Here are the attorney lateral moves and placements for the week of April 17,2019.
+						</h6> 
+						<p class="fs-7 m-0">
+							<a href="#!" class="text-reset">Attorney Recruiter Placements</a>
+						</p>
+						<p class="fs-7 m-0">
+							<a href="#!" class="text-reset">Legal Recruiter Placements</a>
+						</p>
+						<p class="fs-7 m-0">
+							<a href="#!" class="text-reset">Lateral Attorney Moves</a>
+						</p>
+					</div>
+					<!-- Grid column -->
+			
+					<!-- Grid column -->
+					<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+						<!-- Links -->
+						<h6 class="text-capitalize fw-normal mb-2">
+							About BCG
+						</h6>
+						<p class="fs-7 mb-1">
+						<a href="#!" class="text-reset">About Us</a>
+						</p>
+						<p class="fs-7 mb-1">
+						<a href="#!" class="text-reset">Our History</a>
+						</p>
+						<p class="fs-7 mb-1">
+						<a href="#!" class="text-reset">Our Core Values</a>
+						</p>
+						<p class="fs-7 mb-1">
+							<a href="#!" class="text-reset">BCG Benefits</a>
+						</p>
+						<p class="fs-7 mb-1">
+							<a href="#!" class="text-reset">Code of Conduct Diversity</a>
+						</p>
+						<p class="fs-7 mb-1">
+							<a href="#!" class="text-reset">Legal Recruiter Directory</a>
+						</p>
+					</div>
+					<!-- Grid column -->
+			
+					
+					<!-- Grid column -->
+					<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+						<!-- Links -->
+						<h6 class="text-capitalize fw-normal mb-2">
+							work with us
+						</h6>
+						<p class="fs-7 mb-1">
+							<a href="#!" class="text-reset">Submit Resume</a>
+						</p>
+						<p class="fs-7 mb-1">
+							<a href="#!" class="text-reset">Testimonials</a>
+						</p>
+						<p class="fs-7 mb-1">
+							<a href="#!" class="text-reset">Legal Placements</a>
+						</p>
+						<p class="fs-7 mb-1">
+							<a href="#!" class="text-reset">Professionals</a>
+						</p>
+						<p class="fs-7 mb-1">
+							<a href="#!" class="text-reset">Work at BCG</a>
+						</p>
+						<p class="fs-7 mb-1">
+							<a href="#!" class="text-reset">Contact Us</a>
+						</p>
+					</div>
+					<!-- Grid column -->
+
+					<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+						<!-- Links -->
+						<h6 class="fw-normal mb-2">
+							Find a Job
+						</h6>
+						<p class="fs-7 mb-1">
+							<a href="#!" class="text-reset">Attorney Jobs</a>
+						</p>
+						<p class="fs-7 mb-1">
+							<a href="#!" class="text-reset">Partner Jobs</a>
+						</p>
+						<p class="fs-7 mb-1">
+							<a href="#!" class="text-reset">Last Attorney Jobs</a>
+						</p>
+					</div>
+					<!-- Grid column -->
+
+					<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+						<!-- Links -->
+						<h6 class="text-capitalize fw-normal mb-2">
+							resources
+						</h6>
+						<p class="fs-7 mb-1">
+							<a href="#!" class="text-reset">Attorney</a>
+						</p>
+						<p class="fs-7 mb-1">
+							<a href="#!" class="text-reset">Employer</a>
+						</p>
+						<p class="fs-7 mb-1">
+							<a href="#!" class="text-reset">Case Studies</a>
+						</p>
+						<p class="fs-7 mb-1">
+							<a href="#!" class="text-reset">Law Firm Reviews</a>
+						</p>
+					</div>
+					<!-- Grid column -->
+
+					<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+						<!-- Links -->
+						<h6 class="text-capitalize fw-normal mb-2">
+							site info
+						</h6>
+						<p class="fs-7 mb-1">
+							<a href="#!" class="text-reset">Copyright</a>
+						</p>
+						<p class="fs-7 mb-1">
+							<a href="#!" class="text-reset">Site Map</a>
+						</p>
+						<a href=""><img src="../assets/images/google-play.png" class="py-2" alt="Google Play Store Logo"></a>
+						<a href=""><img src="../assets/images/appstore.png" alt="Appstore Logo"></a>
+					</div>
+					<!-- Grid column -->
+					<!-- Grid row -->
+				</div>
+			</div>
+			<div class="border-top border-1 mb-2 container-fluid"></div>
+			<div class="footer-copyright m-0">
+				<div class="container text-center text-md-start mt-2">
+					<div class="d-flex bd-highlight">
+						<div class="p-0 col-10 m-0">
+							<p class="fs-7 mb-1" style="color: #8393b3;">
+								&copy; 2019 BCG Attorney Search. All rights reserved. 
+								<a href="" style="color: white; text-decoration: none;">
+									Privacy Policy
+								</a>
+							</p>
+						</div>
+						<div class="p-0 flex-shrink-1 bd-highlight">
+							<a href="" style="text-decoration: none; color: #8393b3;"><i class="bi bi-facebook pe-1"></i></a>
+							<a href="" style="text-decoration: none; color: #8393b3;"><i class="bi bi-twitter pe-1"></i></a>
+							<a href="" style="text-decoration: none; color: #8393b3;"><i class="bi bi-linkedin pe-1"></i></a>
+							<a href="" style="text-decoration: none; color: #8393b3;"><i class="bi bi-youtube"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+  </body>
+    <script src="./index.js"></script>
+	<!-- <script src="../assets/dist/js/bootstrap.bundle.min.js"></script> -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
