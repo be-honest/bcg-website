@@ -10,6 +10,14 @@ p, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, span {
   color: #2f3a53;
 }
 
+.nav {
+  font-size: 14px;
+}
+
+.bg-light {
+  background-color: white !important;
+}
+
 .left-nav .nav-link, .nav-link:active {
   color: #2f3a53;
 }
@@ -50,21 +58,33 @@ p, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, span {
   border-color: #ac2757;
   color: white;
 }
+.banner .search-jobs .btn-danger {
+  background-color: #ac2757;
+  border-color: #ac2757;
+  border-radius: 0;
+  font-size: 14px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.banner .search-jobs .btn-danger:hover {
+  background-color: #ac5976;
+  border-color: #ac5976;
+}
 
-.subcribe-section {
+.subscribe-section {
   margin-top: 2rem;
   background-color: #8393b3;
 }
-.subcribe-section h2, .subcribe-section .h2, .subcribe-section p {
+.subscribe-section h2, .subscribe-section .h2, .subscribe-section p {
   color: #fff;
 }
-.subcribe-section span {
+.subscribe-section span {
   color: #2f3a53;
 }
-.subcribe-section .input-group {
+.subscribe-section .input-group {
   margin-right: 2rem;
 }
-.subcribe-section input[type=text] {
+.subscribe-section input[type=text] {
   border: none;
   background-color: transparent;
   outline: 0;
@@ -74,24 +94,24 @@ p, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, span {
   border-bottom: 1px solid white;
   border-radius: 0;
 }
-.subcribe-section input[type=text]:focus {
+.subscribe-section input[type=text]:focus {
   border: none;
   background-color: transparent;
   outline: 0;
   width: 300px;
   height: 30px;
 }
-.subcribe-section .btn-danger {
+.subscribe-section .btn-danger {
   background-color: #ac2757;
   border-color: #ac2757;
   border-radius: 20px;
   font-size: 14px;
 }
-.subcribe-section .btn-danger:hover {
+.subscribe-section .btn-danger:hover {
   background-color: #ac5976;
   border-color: #ac5976;
 }
-.subcribe-section .input-group > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+.subscribe-section .input-group > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
   border-radius: 20px;
 }
 

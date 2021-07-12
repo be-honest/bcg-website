@@ -14,9 +14,8 @@
 </head>
   <body>
       <div class="container-fluid p-0">
-		<div class="container-fluid p-0">
 			<!-- Navigation Bar -->
-			<nav class="navbar navbar-expand-lg bg-light container-fluid p-0">
+			<!-- <nav class="navbar navbar-expand-lg bg-light fixed-top container-fluid p-0">
 				<div class="container-fluid px-5">
 				  <a class="navbar-brand" href="#">
 					<img src="../assets/images/logo-tagline.png" alt="BCG Logo">
@@ -80,10 +79,79 @@
 					  </ul>
 				  </div>
 				</div>
-			</nav>
-		</div>
+			</nav> -->
+		<nav class="navbar navbar-expand-lg px-2">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">
+					<img src="../assets/images/logo-tagline.png" alt="BCG Logo">
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<div class="collapse navbar-collapse d-flex justify-content-between" id="navbarNavDropdown">
+						<ul class="navbar-nav left-nav d-flex align-items-center m-0">
+						  <li class="nav-item">
+							<a class="nav-link" aria-current="page" href="#">Browse Jobs</a>
+						  </li>
+						  <li class="nav-item">
+							<a class="nav-link" href="#">Find a Recruiter</a>
+						  </li>
+						  <li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							  Resource Library
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							  <li class="dropend">
+								<a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									Attorney Advice
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+									<li><a href="#" class="dropdown-item">sub menu 1</a></li>
+									<li><a href="#" class="dropdown-item">sub menu 2</a></li>
+								</ul>
+							</li>
+							  <li><a class="dropdown-item" href="#">Job Search Tools</a></li>
+							  <li><a class="dropdown-item" href="#">Case Studies</a></li>
+							  <li><a class="dropdown-item" href="#">Legal Market Research</a></li>
+							  <li><a class="dropdown-item" href="#">Law Firm Rankings</a></li>
+							  <li><a class="dropdown-item" href="#">Guides/eBooks</a></li>
+							  <li><a class="dropdown-item" href="#">Podcast</a></li>
+							  <li><a class="dropdown-item" href="#">Videos</a></li>
+							</ul>
+						  </li>
+						</ul>
+				<form class="d-flex">
+					<ul class="nav right-nav d-flex align-items-center justify-content-end m-0">
+						<li class="nav-item border-end border-1 col-lg-4">
+						  <a class="nav-link" href="#" style="padding: 0;">
+							For Employers
+							<i class="bi bi-arrow-up-right" style="color: gray"></i>
+						  </a>
+						 
+						</li>
+						<li class="nav-item border-end border-1 col-lg-4">
+						  <a class="nav-link style="padding-right: 2rem;" href="#">Sign In</a>
+						</li>
+						<li class="nav-item col-lg-4">
+						  <a class="nav-link" href="#" style="padding: 0;">
+							<i class="bi bi-search" style="font-size: 1.3rem;"></i>
+						</a>
+						</li>
+					  </ul>
+					<!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+					<a class="nav-link" href="#" type="">
+						
+					</a>
+					<button class="btn" type="submit">
+						<i class="bi bi-list" style="font-size: 1.5rem; color: gray;"></i>
+					</button>
+				</form>
+				</div>
+			</div>
+		</nav>
 		<div class="banner container-fluid px-5">
-			<div class="row flex-lg-row-reverse align-items-center g-5 px-4">
+			<div class="row flex-lg-row-reverse align-items-center px-4 m-0 py-0">
 				<div class="col-lg-3 p-0" 
 				style="
 				display: flex;
@@ -121,7 +189,7 @@
 						  <li><a class="dropdown-item" href="#">Menu item</a></li>
 						</ul>
 					</div>
-					<div class="d-grid gap-2 d-md-flex justify-content-md-start pt-5">
+					<div class="d-grid gap-2 d-md-flex justify-content-md-start pt-5 search-jobs">
 					  <button type="button" class="btn btn-danger btn-md px-12">Search Jobs</button>
 					</div>
 				  </div>
@@ -129,14 +197,14 @@
 				  <img src="../assets/images/Banner-img.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
 				</div>
 				<div class="col-lg-3 p-0">
-				  <h1 class="fw-normal lh-base mb-4">America's Premier Legal Placement Firm For Law Firm Attorneys</h1>
+				  <h1 class="fw-normal lh-normal mb-4">America's Premier Legal Placement Firm For Law Firm Attorneys</h1>
 				  <div class="d-grid gap-2 d-md-flex justify-content-md-start">
 					<button type="button" class="btn btn-outline-secondary btn-md px-8 me-md-2">Submit Your Resume</button>
 				  </div>
 				</div>
 			  </div>
 		</div>
-		<section class="subcribe-section container-fluid px-5 py-2">
+		<section class="subscribe-section container-fluid px-5 py-5 mt-0">
 			<div class="section_wrapper row align-items-center">
 				<div class="col-6 py-2">
 					<h2>We've changed thousands of lives over the past 20 years, <span>and yours could be next.</span></h2>
@@ -153,7 +221,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="recommended-section container-fluid px-5 py-2">
+		<section class="recommended-section container-fluid px-5 py-5">
 			<h5 class="mt-2">Recommended Jobs for You</h5>
 			<div class="border-top border-1 mb-2"></div>
 			<div class="card-wrapper col">
@@ -231,7 +299,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="article-section container-fluid px-5 py-2">
+		<section class="article-section container-fluid px-5 py-5">
 			<div class="article-header row align-items-center">
 				<h5 class="mt-2 col-11 p-0">Our latest articles</h5>
 				<a href="" class="col-1 fs-7 text-end">View All</a>
@@ -374,7 +442,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="testimonial-section containter-fluid px-5 py-2">
+		<section class="testimonial-section containter-fluid px-5 py-5">
 			<div class="testimonial-header row align-items-center">
 				<h5 class="mt-2 col-10 p-0">
 					Testimonials
@@ -386,9 +454,9 @@
 				<div id="myCarousel" class="carousel slide carousel-dark">
 					<div class="carousel-indicators">
 					  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
-					  <!-- <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" class="active" aria-label="Slide 2"></button>
+					  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" class="active" aria-label="Slide 2"></button>
 					  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-					  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button> -->
+					  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
 					</div>
 					<div class="carousel-inner">
 					  <div class="carousel-item">
@@ -441,7 +509,7 @@
 				  </div>
 			</div>
 		</section>
-		<section class="legal-section container-fluid px-5 py-2">
+		<section class="legal-section container-fluid px-5 py-5">
 			<h5 class="mt-2">Legal Jobs</h5>
 			<div class="border-top border-1 mb-2"></div>
 			<div class="legal-wrapper py-4">

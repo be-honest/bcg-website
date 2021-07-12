@@ -13,6 +13,15 @@ $secondary_color: #8393b3;
 p, h1, h2, h3, h4, h5, h6, span{
     color: $font_color;
 }
+
+// navigation bar
+.nav{
+    font-size: 14px;
+}
+.bg-light{ 
+    background-color: white !important; 
+}
+
 .left-nav .nav-link, .nav-link:active{
     color: $font_color;
 }
@@ -56,10 +65,25 @@ p, h1, h2, h3, h4, h5, h6, span{
         border-color: $primary_color;
         color: white;
     }
+    .search-jobs{
+        .btn-danger{
+            background-color: $primary_color;
+            border-color: $primary_color;
+            border-radius: 0;
+            font-size: 14px;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+        .btn-danger:hover{
+            background-color: #ac5976;
+            border-color: #ac5976;
+        }
+    }
+        
 }
 
 // section - 1 - subscribe
-.subcribe-section{
+.subscribe-section{
     margin-top: 2rem;
     background-color: $secondary_color;
     h2, p{
