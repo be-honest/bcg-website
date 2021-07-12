@@ -39,6 +39,18 @@ p, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, span {
   font-size: 0.65rem !important;
 }
 
+.banner .btn-outline-secondary {
+  background-color: white;
+  border-color: #ac2757;
+  color: #ac2757;
+  border-radius: 0;
+}
+.banner .btn-outline-secondary:hover {
+  background-color: #ac2757;
+  border-color: #ac2757;
+  color: white;
+}
+
 .subcribe-section {
   margin-top: 2rem;
   background-color: #8393b3;
@@ -48,6 +60,39 @@ p, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, span {
 }
 .subcribe-section span {
   color: #2f3a53;
+}
+.subcribe-section .input-group {
+  margin-right: 2rem;
+}
+.subcribe-section input[type=text] {
+  border: none;
+  background-color: transparent;
+  outline: 0;
+  font-size: 16px;
+  width: 300px;
+  height: 30px;
+  border-bottom: 1px solid white;
+  border-radius: 0;
+}
+.subcribe-section input[type=text]:focus {
+  border: none;
+  background-color: transparent;
+  outline: 0;
+  width: 300px;
+  height: 30px;
+}
+.subcribe-section .btn-danger {
+  background-color: #ac2757;
+  border-color: #ac2757;
+  border-radius: 20px;
+  font-size: 14px;
+}
+.subcribe-section .btn-danger:hover {
+  background-color: #ac5976;
+  border-color: #ac5976;
+}
+.subcribe-section .input-group > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+  border-radius: 20px;
 }
 
 .recommended-section .card-wrapper .card {
@@ -71,6 +116,16 @@ p, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, span {
 .recommended-section .card-custom-footer .right .card-link-1 i {
   color: #4d4646;
   font-size: 1rem;
+}
+.recommended-section .btn-danger {
+  background-color: #ac2757;
+  border-color: #ac2757;
+  border-radius: 20px;
+  font-size: 14px;
+}
+.recommended-section .btn-danger:hover {
+  background-color: #ac5976;
+  border-color: #ac5976;
 }
 
 .article-section {
